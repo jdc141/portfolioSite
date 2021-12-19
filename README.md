@@ -1,2 +1,3 @@
 # portfolioSite
-Website that hosts my coding projects
+
+Website that hosts my coding projects.

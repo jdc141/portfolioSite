@@ -1,5 +1,6 @@
 :root {
   --bg-color: #edf5e1;
+  --nav-color: #05386b;
   --typewriterSpeed: 6s;
   --typeWriterCharacters: 22;
 }
@@ -15,7 +16,7 @@ body {
   text-align: center;
   background: var(--bg-color);
 }
-nav {
+.nav {
   overflow: hidden;
   text-align: center;
   position: fixed;
@@ -24,19 +25,18 @@ nav {
   margin: 0;
   padding: 0;
 }
-
-nav ul {
+.nav-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #05386b;
 }
-nav li {
+.nav-item {
   float: left;
 }
 
-li a {
+.nav-link {
   display: flex;
   justify-content: center;
   color: #edf5e1;
@@ -47,23 +47,11 @@ li a {
 li a:hover {
   background-color: #8ee4af;
 }
-
-.active {
-  background-color: #379683;
-}
-
 h1 {
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
   position: relative;
   font-family: "Source Code Pro", monospace;
   position: relative;
-  width: max-content;
-}
-.type-p {
-  font-size: clamp(1rem, 3vw + 1rem, 4rem);
-  position: relative;
-  font-family: "Source Code Pro", monospace;
-  white-space: normal;
   width: max-content;
 }
 h1::before,
@@ -87,7 +75,6 @@ h1::after {
       steps(var(--typeWriterCharacters)) 1s forwards,
     blink 750ms steps(21) infinite;
 }
-
 .subtitle {
   font-size: 2rem;
   font-weight: 400;
@@ -111,7 +98,26 @@ h1::after {
     transform: translateY(0);
   }
 }
-
+@keyframes btnComeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768) {
+  .nav {
+    width: 100%;
+  }
+  .nav-item {
+    width: 100%;
+    float: none;
+  }
+}
+/* General */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
 /* body {
   background-color: #5cdb95;
   color: #edf5e1;
