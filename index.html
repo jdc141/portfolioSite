@@ -2,19 +2,25 @@
 <html lang="en">
   <head>
     <title>Joseph Charland's Website</title>
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" />
+    <!-- Font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap"
     />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- jsNavBar-->
+    <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- NavBar -->
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
@@ -47,8 +53,19 @@
         </li>
       </ul>
     </nav>
+    <!-- End NavBar -->
 
-    <h1>Hello, my name is Joe.</h1>
-    <p class="subtitle">I'm a Java developer.</p>
+    <!-- Title Section -->
+    <section id="home" class="title">
+      <h1>Hello, my name is Joe.</h1>
+      <p class="subtitle">I'm a Java developer.</p>
+    </section>
+    <!-- End Title Section -->
+
+    <!-- Project Section -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+    </section>
+    <!-- End Project Section -->
   </body>
 </html>
