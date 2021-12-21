@@ -93,12 +93,6 @@ body {
   background-color: white;
   border-radius: 10px;
 }
-.navbar-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 /* Title/typewriter annimation */
 .title {
   display: grid;
@@ -318,6 +312,11 @@ h1::after {
 
   .navbar-links.active {
     display: flex;
+  }
+  .navbar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 }
 /* responsive cards */
