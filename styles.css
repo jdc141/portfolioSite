@@ -94,6 +94,7 @@ body {
   position: sticky;
   top: 0;
 }
+
 /* Makes navbar responsive */
 @media (max-width: 800px) {
   .navbar {
@@ -276,11 +277,11 @@ h1::after {
   .project-name::after {
     margin-left: 0;
   }
-}
-.fade-in {
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-.fade-in.appear {
-  opacity: 1;
+  .fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  .fade-in.appear {
+    opacity: 1;
+  }
 }
