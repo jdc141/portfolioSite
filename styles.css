@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+  width: 2em;
+}
+::-webkit-scrollbar-track {
+  background: hsl(120 75% 50% / 1);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(120 100% 20%/1);
+}
+
 :root {
   --bg-color: #edf5e1;
   --nav-color: #05386b;
@@ -68,6 +78,12 @@ body {
   background-color: white;
   border-radius: 10px;
 }
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+/* Makes navbar responsive */
 @media (max-width: 800px) {
   .navbar {
     flex-direction: column;
