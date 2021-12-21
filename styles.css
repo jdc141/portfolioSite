@@ -204,6 +204,7 @@ h1::after {
   line-height: 1.6;
   margin-top: auto;
 }
+/* project cards */
 .card {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   width: 80%;
@@ -263,6 +264,7 @@ h1::after {
 .icon-link:focus {
   opacity: 1;
 }
+/* responsive cards */
 @media (min-width: 600px) {
   .card {
     flex-direction: row;
@@ -274,4 +276,11 @@ h1::after {
   .project-name::after {
     margin-left: 0;
   }
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
 }
