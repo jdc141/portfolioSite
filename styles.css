@@ -1,9 +1,13 @@
 :root {
-  --bg-color: #112240;
-  --nav-color: #112240;
+  --bg-color: #0a192f;
+  --nav-color: #0a192f;
   --nav-text-color: #8892b0;
   --title-text-color: #e6f1ff;
   --logo-color: #64ffda;
+  --project-card-bg: #233554;
+  --project-card-icon: #ccd6f6;
+  --project-card-text: #a8b2d1;
+  --project-card-title: #ccd6f6;
   --subtitle-text-color: #8892b0;
   --hover-color: #233554;
   --typewriterSpeed: 6s;
@@ -212,7 +216,7 @@ h1::after {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: #64ffda;
+  background-color: var(--project-card-bg);
   /* color: ; */
   text-align: center;
   padding: 2em;
@@ -221,6 +225,7 @@ h1::after {
   font-size: 2rem;
   line-height: 1.1;
   letter-spacing: 1px;
+  color: var(--project-card-title);
 }
 .project-name::after {
   content: "";
@@ -236,12 +241,13 @@ h1::after {
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 3px;
-  /* color: ; */
+  color: var(--project-card-text);
 }
 .project-body {
   font-weight: 300;
   opacity: 0.8;
   margin-bottom: 2em;
+  color: var(--project-card-text);
 }
 .project-image {
   border-radius: 50%;
@@ -257,7 +263,7 @@ h1::after {
   margin: 0 auto;
 }
 .icon-link {
-  color: var(--hover-color);
+  color: var(--project-card-icon);
   opacity: 0.5;
   font-size: 1.125rem;
 }
