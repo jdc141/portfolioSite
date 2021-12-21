@@ -1,6 +1,10 @@
 :root {
-  --bg-color: #edf5e1;
-  --nav-color: #05386b;
+  --bg-color: #112240;
+  --nav-color: #112240;
+  --title-color: #e6f1ff;
+  --logo-color: #64ffda;
+  --subtitle-color: #8892b0;
+  --hover-color: #233554;
   --typewriterSpeed: 6s;
   --typeWriterCharacters: 22;
 }
@@ -25,7 +29,7 @@ body {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: var(--nav-color);
   color: white;
 }
 .logo {
@@ -50,7 +54,7 @@ body {
   display: block;
 }
 .navbar-links li:hover {
-  background-color: #555;
+  background-color: var(--hover-color);
 }
 .toggle-button {
   position: absolute;
@@ -118,6 +122,7 @@ h1 {
   font-family: "Source Code Pro", monospace;
   position: relative;
   width: max-content;
+  color: var(--title-color);
 }
 h1::before,
 h1::after {
@@ -135,13 +140,14 @@ h1::before {
 }
 h1::after {
   width: 0.125em;
-  background: black;
+  background: #64ffda;
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typeWriterCharacters)) 1s forwards,
     blink 750ms steps(21) infinite;
 }
 /* subtitle/fade up annimation after typewritter is finnished */
 .subtitle {
+  color: var(--subtitle-color);
   font-size: 1.5rem;
   font-weight: 400;
   opacity: 0;
@@ -182,9 +188,13 @@ h1::after {
 } */
 /* projects class */
 .projects-section {
-  background: orange;
   min-height: 100vh;
-  min-width: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.projects-section h2 {
+  text-align: left;
 }
 section {
   justify-content: center;
