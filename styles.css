@@ -180,6 +180,7 @@ h1::after {
   background-color: var(--project-card-bg);
   text-align: center;
   padding: 2em;
+  /* Spacing for mobile */
   margin-bottom: 1rem;
 }
 .project-name {
