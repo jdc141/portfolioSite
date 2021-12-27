@@ -178,9 +178,9 @@ h1::after {
   display: flex;
   flex-direction: column;
   background-color: var(--project-card-bg);
-  /* color: ; */
   text-align: center;
   padding: 2em;
+  margin-bottom: 1rem;
 }
 .project-name {
   font-size: 2rem;
