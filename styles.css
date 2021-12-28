@@ -183,6 +183,10 @@ h1::after {
   /* Spacing for mobile */
   margin-bottom: 1rem;
 }
+.project-link {
+  text-decoration: none;
+  color: var(--project-card-title);
+}
 .project-name {
   font-size: 2rem;
   line-height: 1.1;
